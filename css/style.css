@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'Inter'; /* You can name this whatever you want */
+    src: url('../fonts/inter-variable-latin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins'; /* You can name this whatever you want */
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'PoppinsMedium'; /* You can name this whatever you want */
+    src: url('../fonts//PoppinsMedium.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.bg-aasandha-primary{
+    background-color: #FFF3F3;
+}
+
+.bg-aasandha-secondary{
+    background-color: #8B1913;
+}
+
+.bg-aasandha-tertiary{
+    background-color: #F5F7FA;
+}
+
+.bg-aasandha-footer{
+    background-color: #5B0E0E;
+}
+
+.bg-aasandha-app{
+    background-color: #FBEEEE;
+}
+
+h1{
+    font-family: 'PoppinsMedium', sans-serif;
+    color: #C62424;
+}
+
+h3{
+    color: #8B1913;
+}
+
+h5{
+    color: var(--gray-600);
+}
+
+
+.readmore, .contact{
+    color: #C62424;
+}
+
+.readmore:hover{
+    color: #8B1913;
+}
+
+.mt-n5 {
+    margin-top: -5rem !important;
+}
+
+.navbar-nav>.nav-item>.nav-link:before {
+    content: none;
+}
+
+.navbar-nav .nav-link, .dropdown-item{
+    transition: none !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+    background-color: #C62424;
+    border-radius: 20px;
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #C62424;
+    border-radius: 20px;
+}
+
+.nav-underline .nav-link:before {
+    background-color: #C62424;
+}
+
+.nav-underline.flex-column .nav-link.active:before {
+    width: 2px;
+}
+
+.nav-pills {
+    --cz-nav-pills-gap: 0.5rem !important;
+}
+
+.accordion-button:after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-item{
+    border-bottom: 0 !important;
+}
+
+.accordion-header{
+    background-color: #C62424;
+}
+
+.accordion-link a:hover {
+    color: #C62424 !important; /* Color on hover */
+}
+
+.accordion-link .active{
+    color: #C62424 !important; /* Color on hover */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #C62424;
+    color: #fff;
+}
+
+.aasandha-nav-tabs .nav-link.active {
+    background-color: #C62424;
+    border: none;
+    color: #fff;
+}
+
+.aasandha-nav-tabs .nav-link.active:hover {
+    border-color: none;
+    color: #fff;
+}
+
+.aasandha-nav-tabs .nav-link:hover {
+    border-color: #C62424;
+    color: #8B1913;
+}
+
+.content{
+    line-height: 2.5rem;
+}
+
+/* Ensure the image inside the lightbox is centered and takes up the full screen */
+.glightbox .gloader, .glightbox .gbox {
+    overflow: hidden;
+}
+
+.glightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image fits inside the container without overflowing */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.cls-1 {
+    fill: #8B1913;
+}
+
+.w-30{
+    width: 320px;
+}
+
+.app-rounded{
+    border-radius: 30px;
+}
+
+.footer-border-top{
+    border-top: 1px solid #714343;
+}
+
+.footer-border-bottom{
+    border-bottom: 1px solid #714343;
+}
+
+.footer-secondary-text{
+    color:#ffc4c4;
+}
+
+/* About Us */
+.aboutus .nav-item a.nav-link.active{
+  background-color: #DF1D22;
+  border: #DF1D22;
+  color: white;
+}
+
+.aboutus .nav-item a.nav-link.active:hover{
+  background-color: #8B1913;
+  color: white;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+/* Vertical Line in Center */
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #dee2e6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-1px);
+}
+
+/* Each Timeline Item */
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8rem; /* Adds more spacing between years */
+}
+
+/* Year Circle */
+.timeline-year {
+    background: #991818;
+    color: #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Timeline Content Box */
+.timeline-content {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.5rem;
+    width: calc(50% - 4rem);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+/* Odd items align right */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+}
+
+/* Even items align left */
+.timeline-item:nth-child(even) .timeline-content {
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 1rem;
+        transform: none;
+    }
+
+    .timeline-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .timeline-year {
+        position: relative; /* was absolute */
+        left: -15px;
+        top: auto;
+        transform: none;
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem; /* spacing between year and content */
+        flex-shrink: 0;
+        margin-top: 0.25rem; /* optional vertical alignment tweak */
+    }
+
+    .timeline-content {
+        width: auto;
+        flex: 1;
+        margin: 0;
+    }
+
+    .timeline-content::before {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .mt-n5 {
+        margin-top: -3.5rem !important;
+    }
+}
