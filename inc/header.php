@@ -49,7 +49,7 @@
                     <a class="nav-link fs-xs p-0 text-white" href="#!"><i class="ci-phone animate-target pe-2"></i>1440</a>
                 </li>
                 <li>
-                    <a class="nav-link fs-xs p-0 text-white" href="/aasandhamv/dv/index.php"><i class="ci-globe animate-target pe-2"></i>EN</a>
+                    <a class="nav-link fs-xs p-0 text-white" href="/aasandhamv/en/index.php"><i class="ci-globe animate-target pe-2"></i>EN</a>
                 </li>
             </ul>
         </div>
